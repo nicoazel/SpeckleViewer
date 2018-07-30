@@ -33,3 +33,7 @@ var SpkAppConfig = {
 window.SpkAppConfig = SpkAppConfig
 ```
 It’s rather important to serve things to ```https``` and make sure the server is allowing ```cors```.
+
+## Adding Streams Once Running
+
+To add more streams, just add more stream ids to the url, separated by commas: ```https://s003.speckle.works/view/?ryuFyiHuz,rkf6JoHuf```
