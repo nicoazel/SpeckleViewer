@@ -5,7 +5,7 @@
 
 ![Image of Speckle Viewer](https://speckle.works/img/onlineviewer/headerimg4c.png)
 
-More info to come. 
+More info to come.
 
 ## Build Setup
 
@@ -19,3 +19,16 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+## Deployment
+
+You will need to modify the ./dist/config.js file to fit your deployment details. It’s rather self-descriptive, it just exports a global object with info:
+
+```var SpkAppConfig = {
+  serverUrl: 'http://localhost:8080',
+  allowGuestAccess: true,
+  logoUrl: 'https://company.png'
+}
+
+window.SpkAppConfig = SpkAppConfig
+```
+It’s rather important to serve things to ```https``` and make sure the server is allowing ```cors```.
