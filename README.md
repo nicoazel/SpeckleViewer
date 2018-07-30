@@ -23,7 +23,8 @@ npm run build
 
 You will need to modify the ./dist/config.js file to fit your deployment details. It’s rather self-descriptive, it just exports a global object with info:
 
-```var SpkAppConfig = {
+```
+var SpkAppConfig = {
   serverUrl: 'http://localhost:8080',
   allowGuestAccess: true,
   logoUrl: 'https://company.png'
